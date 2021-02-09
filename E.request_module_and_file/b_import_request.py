@@ -1,6 +1,6 @@
 import requests
 
-response = requests.get("http://example.com")
+response = requests.get("https://www.rokomari.com/book")
 
 print(response.ok)
 
