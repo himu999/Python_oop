@@ -20,6 +20,7 @@ class Car(Vehicle):
     """Car class"""
 
     def __init__(self, name, manufacturer, color, year):
+        super().__init__(name, manufacturer, color)
         self.name = name
         self.manufacturer = manufacturer
         self.color = color
@@ -27,19 +28,12 @@ class Car(Vehicle):
         self.wheels = 4
         print("A new car has been created. Name:", self.name)
         print("It has", self.wheels, "wheels")
-        print("The car was bulit in", self.year)
+        print("The car was built in", self.year)
 
-        def change_gear(self, gear_name):
+        def change_gear(gear_name):
             """Method of changing gear"""
             print(self.name, "is changing gear to", gear_name)
 
 
 if __name__ == "__main__":
     c = Car("Afnan GT 5.0 ", "N&R CC", "RED", 2015)
-
-
-
-
-
-
-
