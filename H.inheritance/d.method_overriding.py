@@ -2,7 +2,6 @@ class Vehicle:
     """Base class for all vehicle"""
 
     def __init__(self, name, color, brand):
-
         self.name = name
         self.color = color
         self.brand = brand
@@ -13,12 +12,9 @@ class Vehicle:
 
 class Car(Vehicle):
     """Car class"""
-
     def __init__(self, name, color, brand, year):
+        print("Creating a car")
         super().__init__(name, color, brand)
-        self.name = name
-        self.color = color
-        self.brand = brand
         self.year = year
         self.wheels = 4
 
@@ -32,12 +28,7 @@ class Car(Vehicle):
 
 if __name__ == "__main__":
     c = Car("Nusrat 5 GT force", "White", "RA", 2017)
-    v = Vehicle("Rafi", "Black", "Afnan")
-
-    c.change_gear("P")
-    c.turn("Left")
-
-    v.turn("Right")
+    print(c.name, c.year, c.wheels)
 
 
 
