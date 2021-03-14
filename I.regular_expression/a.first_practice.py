@@ -1,12 +1,19 @@
-s = "Afganistan, America, Bangladesh, Canada, Denmark, England, Greenland, Iceland, Netherlands, New Zealand, Sweden, " \
-    "Swizerland"
+import re
 
+match = re.search('Bangla', 'Bangladesh')
 
-countries = s.split(',')
+print(match)
+print(match.group())
 
+match1 = re.search("desh", "Bangladesh")
+print(match1)
+print(match1.group())
 
-print(countries, end="\n\n")
+match = re.search("dets", "Bangladesh")
+# print(match.group())
 
-li = [item for item in countries if item.endswith("land") or item.endswith("lands")]
+print(match)
 
-print(li)
+print(type(match))
+
+print(match is None)
