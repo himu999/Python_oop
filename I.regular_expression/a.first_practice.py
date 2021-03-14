@@ -4,10 +4,9 @@ s = "Afganistan, America, Bangladesh, Canada, Denmark, England, Greenland, Icela
 
 countries = s.split(',')
 
-print(type(countries))
 
-print(countries)
+print(countries, end="\n\n")
 
-li = [item for item in countries if item.endswith("land")]
+li = [item for item in countries if item.endswith("land") or item.endswith("lands")]
 
 print(li)
